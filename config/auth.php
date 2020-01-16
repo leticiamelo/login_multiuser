@@ -48,6 +48,7 @@ return [
     Forma de autenticação utilizada para cada tipo (guards) 
         - session: utiliza sessão, db ou cookie 
         - token: utiliza token que é passado em cada requisição 
+        - provider é a tabela onde estao armazenados os usuarios
     */
 
     'guards' => [
@@ -128,7 +129,7 @@ return [
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',
-            'expire' => 60,   // minutos
+            'expire' => 60,   // minutos que vai expirar o reset password.
         ],
 /////// ==>>> novo        
         'admins' => [

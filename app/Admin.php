@@ -10,6 +10,7 @@ class Admin extends Authenticatable
     use Notifiable;
     
     // =====>>> novo
+    //informando ao guard (arquivo config/auth.php) que esse modelo é o responsavel pelo guard 'admin'.
     protected $guard = 'admin';
     //
 

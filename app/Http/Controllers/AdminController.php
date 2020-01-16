@@ -9,7 +9,7 @@ class AdminController extends Controller
     public function __construct()
     {
         // Primeiro usar esse
-        // $this->middleware('auth');
+        // $this->middleware('auth')  e passando o admin para a middleware auth
         // Depois esse:
         $this->middleware('auth:admin');
     }
